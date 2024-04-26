@@ -1,5 +1,5 @@
 :root{
-    --corbackground: #BBBBBB;
+    --corbackground: #888888;
     --cornava: #000000;
     --cornavahover: #c78c19;
     --corcopyright: #CCCCCC;
@@ -13,7 +13,7 @@ body{
 }
 
 header{
-    background-color: var(--colorbackgrounf);
+    background-color: var(--corbackgroun);
     padding: 20px 0;
 }
 
