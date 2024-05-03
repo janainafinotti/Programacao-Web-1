@@ -1,76 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<form action="" method="post">
+<label for="nomeSobrenome">Nome e sobrenome</label>
+<input type="text" id="nomeSobrenome" class="input-padrao" required>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="Quem quer ser bem atendido e voltar para casa mais bonito vem na barbearia Devisate.">
-	<meta name="keywords" content="Barba, Cabelo, Bigode, Barbearia em Marília, Agendamento de Corte.">
-	<meta name="robots" content="index, follow">
-	<meta name="revisit-after" content="7 day">
-	<meta name="language" content="Portuguese">
-	<meta name="generator" content="N/A">
-	<meta name="author" content="Marcelo Dias">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@0;1&display=swap" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="favicon/barbearia.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/home.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title> Barbearia Devisate </title>
-</head>
+<label for="email">Email</label>
+<input type="email"id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-<body>
-	<!-- Cabeçalho do site -->
-	<header>
-		<div class="caixa">
-			<img src="assets/logo em preto.png"  alt="Logo Barbearia Devisate ">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="produtos.html">Produtos</a> </li>
-					<li><a href="contatos.html">Contatos</a> </li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- Conteúdo Principal -->
-	<main>
-		<form action="" method="post">
-			<label for="nomesobrenome"> Nome e Sobrenome</label>
-			<input type="text" name="nomesobrenome"
-			id="nomesobrenome" class="input-padrao"required>
+<label for="telefone">Telefone</label>
+<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
 
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email"
-			class="input-padrao" required
-			placeholder="seuemail@dominio.com">
-			
-			<label for="telefone">Telefone</label>
-			<input type="tel" name="telefone" id="telefone"
-			class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-			<label for="mensagem">mensagem</label>
-			<textarea name="mensagem" id="mensagem"
-			cols="70" rows="10" class="input-padrao"></textarea>
+<label for="mensagem">Mensagem</label>
+<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
 
-			<fieldset>
-				
+<fieldset>
+    <legend>Como prefere nosso contato?</legend>
+    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
-			</fieldset>
+    <label for="radio-telefone"><input type="radio" name="contato" value="email" id="radio-telefone">Telefone></label>
 
-		</form>
-		
+    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+</fieldset>
+
+<fieldset>
+    <legend>Qual horário prefere ser atendido?</legend>
+    <select>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+        </select>
+</fieldset>
+
+<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email? </label>
+
+<input type="submit" value="Enviar formuário" class="enviar">
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Segunda</td>
+            <td>8h~20h</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>8h~20h</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>8h~20h</td>
+        </tr>
+    </tbody>
+</table>
 </main>
-
-	<!-- Rodapé da Página -->
-	<footer>
-		<h2><img src="assets/logo em branco.png" alt="Logo Barbearia Devisate branco"</h2>
-		<p class="copyright">&copy;Copyright Barbearia Devisate - 2024</p>
-	</footer>
-</body>
-
-</html>
